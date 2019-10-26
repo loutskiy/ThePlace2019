@@ -5,6 +5,7 @@ target 'ThePlace2019' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
   pod 'GoogleMaps'
+  pod 'GooglePlaces'
   # Pods for ThePlace2019
 
 end
