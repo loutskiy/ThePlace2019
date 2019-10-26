@@ -6,8 +6,6 @@ target 'ThePlace2019' do
   use_frameworks!
   pod 'GoogleMaps'
   pod 'GooglePlaces'
-  pod 'Firebase/Auth'
-pod 'Firebase/Firestore'
   # Pods for ThePlace2019
 
 end

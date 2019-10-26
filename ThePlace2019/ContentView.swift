@@ -21,6 +21,9 @@ struct GMapKitView: UIViewRepresentable {
 struct ContentView: View {
     
     @State var text = ""
+    @State private var animals: Bool = false
+    @State private var constructions: Bool = false
+    @State private var presentPlaceManagerView: Bool = false
     func action() {
         
     }
@@ -28,31 +31,39 @@ struct ContentView: View {
     var body: some View {
             VStack {
                 HStack(spacing: 10) {
-                    TextField("Address", text: $text, onCommit: action)
-                        .frame(height: 32)
-                        .background(Color.white.opacity(0.2))
+                    Text(" Search address...")
+                        .frame(minWidth: UIScreen.main.bounds.width - 110, maxWidth: .infinity, minHeight: 32, maxHeight: 32)
+                        .background(Color.black.opacity(0.1))
+                        .foregroundColor(Color.black.opacity(0.5))
                         .cornerRadius(8)
-                        .autocapitalization(.none)
-                        .padding(.horizontal, 5)
+                        .padding(.horizontal, 8)
+                        .onTapGesture {
+                            self.presentPlaceManagerView = true
+                        }
 
                     Button(action: {
                         print("clicked")
                     }) {
-                        Text("Buildings")
-                    }.padding(.horizontal, 10)
+                        Text("🏢")
+                    }
 
                     Button(action: {
                         print("clicked")
                     }) {
-                        Text("Animals")
-                    }.padding(.horizontal, 10)
+                        Text("🐗")
+                    }.padding(.horizontal, 8)
                 }
                 GMapKitView()
-                    //UIScreen.main.bounds.height-80
                     .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: Alignment.topLeading)
                 
            
         }
+        .sheet(isPresented: $presentPlaceManagerView) {
+            NavigationView {
+                PlaceManagerView()
+            }
+        }
+        .onAppear(perform: action)
     }
 }
 
