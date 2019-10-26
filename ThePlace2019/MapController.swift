@@ -30,6 +30,7 @@ class MapController: UIView {
         Bundle.main.loadNibNamed(kCONTENT_XIB_NAME, owner: self, options: nil)
         contentView.fixInView(self)
         heatmapLayer = GMUHeatmapTileLayer()
+        heatmapLayer.radius = 50
         addHeatmap()
         heatmapLayer.map = mapView
         
@@ -48,7 +49,7 @@ class MapController: UIView {
             for item in object {
               let lat = item["lat"]
               let lng = item["lng"]
-              let coords = GMUWeightedLatLng(coordinate: CLLocationCoordinate2DMake(lat as! CLLocationDegrees, lng as! CLLocationDegrees), intensity: 1.0)
+              let coords = GMUWeightedLatLng(coordinate: CLLocationCoordinate2DMake(lat as! CLLocationDegrees, lng as! CLLocationDegrees), intensity: 100.0)
               list.append(coords)
             }
           } else {
