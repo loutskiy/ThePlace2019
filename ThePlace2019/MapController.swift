@@ -30,8 +30,8 @@ class MapController: UIView {
         Bundle.main.loadNibNamed(kCONTENT_XIB_NAME, owner: self, options: nil)
         contentView.fixInView(self)
         heatmapLayer = GMUHeatmapTileLayer()
-        heatmapLayer.map = mapView
         addHeatmap()
+        heatmapLayer.map = mapView
         
 //        contentView.layer.cornerRadius = 4.0
 //        contentView.layer.borderWidth = 1.0
