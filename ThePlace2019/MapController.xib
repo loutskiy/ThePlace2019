@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,7 +19,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BYX-RT-fU4" customClass="GMSMapView">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </view>
             </subviews>
@@ -27,9 +27,10 @@
             <constraints>
                 <constraint firstItem="BYX-RT-fU4" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5XV-Pf-eha"/>
                 <constraint firstAttribute="bottom" secondItem="BYX-RT-fU4" secondAttribute="bottom" id="Pef-7f-fEy"/>
-                <constraint firstItem="BYX-RT-fU4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Z05-H1-DV6"/>
+                <constraint firstItem="BYX-RT-fU4" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Z05-H1-DV6"/>
                 <constraint firstItem="BYX-RT-fU4" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="teI-kZ-5RG"/>
             </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="145" y="125"/>
         </view>
