@@ -44,6 +44,7 @@
 		C4DB2E3723644B0800E85895 /* GMUDefaultClusterIconGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DB2E1923644B0800E85895 /* GMUDefaultClusterIconGenerator.m */; };
 		C4DB2E3823644B0800E85895 /* GMUStaticCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DB2E1C23644B0800E85895 /* GMUStaticCluster.m */; };
 		C4DB2E3D23644F8000E85895 /* heat.json in Resources */ = {isa = PBXBuildFile; fileRef = C4DB2E3C23644F8000E85895 /* heat.json */; };
+		C4DB2E3F236451A800E85895 /* GMapKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DB2E3E236451A800E85895 /* GMapKitView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -129,6 +130,7 @@
 		C4DB2E1E23644B0800E85895 /* GMUClusterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUClusterItem.h; sourceTree = "<group>"; };
 		C4DB2E3B23644B6900E85895 /* Header-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Header-Bridge.h"; sourceTree = "<group>"; };
 		C4DB2E3C23644F8000E85895 /* heat.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = heat.json; sourceTree = "<group>"; };
+		C4DB2E3E236451A800E85895 /* GMapKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapKitView.swift; sourceTree = "<group>"; };
 		EC027A34C9E5A122274D9F53 /* Pods-ThePlace2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThePlace2019.release.xcconfig"; path = "Target Support Files/Pods-ThePlace2019/Pods-ThePlace2019.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -186,6 +188,7 @@
 				C4DB2DBD2364464300E85895 /* SceneDelegate.swift */,
 				C4DB2DBF2364464300E85895 /* ContentView.swift */,
 				C4DB2DD32364477400E85895 /* UIView+extension.swift */,
+				C4DB2E3E236451A800E85895 /* GMapKitView.swift */,
 				C4DB2DCF236446FD00E85895 /* MapController.swift */,
 				C4DB2DD12364470800E85895 /* MapController.xib */,
 				C4DB2E3C23644F8000E85895 /* heat.json */,
@@ -466,6 +469,7 @@
 				C4DB2E2123644B0800E85895 /* GMUGeometryCollection.m in Sources */,
 				C4DB2E3823644B0800E85895 /* GMUStaticCluster.m in Sources */,
 				C4DB2E2923644B0800E85895 /* GMUPair.m in Sources */,
+				C4DB2E3F236451A800E85895 /* GMapKitView.swift in Sources */,
 				C4DB2E1F23644B0800E85895 /* GMUKMLParser.m in Sources */,
 				C4DB2E3623644B0800E85895 /* GMUDefaultClusterRenderer.m in Sources */,
 				C4DB2DBE2364464300E85895 /* SceneDelegate.swift in Sources */,
