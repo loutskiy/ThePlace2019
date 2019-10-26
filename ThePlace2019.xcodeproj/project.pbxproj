@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		60DDA25EF61155D90EEC67F5 /* Pods_ThePlace2019.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290BE0BB363D708E95CD2B04 /* Pods_ThePlace2019.framework */; };
+		AC64A391236457C000CBC178 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC64A390236457C000CBC178 /* MainView.swift */; };
+		AC64A3932364580B00CBC178 /* Favourites.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC64A3922364580B00CBC178 /* Favourites.swift */; };
+		AC64A39623645CCE00CBC178 /* HeatMapsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC64A39423645CCD00CBC178 /* HeatMapsView.xib */; };
+		AC64A39723645CCE00CBC178 /* HeatMapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC64A39523645CCE00CBC178 /* HeatMapsView.swift */; };
 		C4DB2DBC2364464300E85895 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DB2DBB2364464300E85895 /* AppDelegate.swift */; };
 		C4DB2DBE2364464300E85895 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DB2DBD2364464300E85895 /* SceneDelegate.swift */; };
 		C4DB2DC02364464300E85895 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DB2DBF2364464300E85895 /* ContentView.swift */; };
@@ -51,6 +55,10 @@
 /* Begin PBXFileReference section */
 		290BE0BB363D708E95CD2B04 /* Pods_ThePlace2019.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ThePlace2019.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB8860A7AB7C7B8DAF66D0E /* Pods-ThePlace2019.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThePlace2019.debug.xcconfig"; path = "Target Support Files/Pods-ThePlace2019/Pods-ThePlace2019.debug.xcconfig"; sourceTree = "<group>"; };
+		AC64A390236457C000CBC178 /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		AC64A3922364580B00CBC178 /* Favourites.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Favourites.swift; sourceTree = "<group>"; };
+		AC64A39423645CCD00CBC178 /* HeatMapsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeatMapsView.xib; sourceTree = "<group>"; };
+		AC64A39523645CCE00CBC178 /* HeatMapsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeatMapsView.swift; sourceTree = "<group>"; };
 		C4DB2DB82364464300E85895 /* ThePlace2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThePlace2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DB2DBB2364464300E85895 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4DB2DBD2364464300E85895 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -188,12 +196,15 @@
 			children = (
 				C4DB2DBB2364464300E85895 /* AppDelegate.swift */,
 				C4DB2DBD2364464300E85895 /* SceneDelegate.swift */,
+				AC64A390236457C000CBC178 /* MainView.swift */,
 				C4DB2DBF2364464300E85895 /* ContentView.swift */,
+				AC64A3922364580B00CBC178 /* Favourites.swift */,
 				C4DB2DD32364477400E85895 /* UIView+extension.swift */,
-				C4DB2E3E236451A800E85895 /* GMapKitView.swift */,
 				C4DB2DCF236446FD00E85895 /* MapController.swift */,
 				C4DB2DD12364470800E85895 /* MapController.xib */,
 				C4DB2E402364600D00E85895 /* PlaceManager.swift */,
+				AC64A39523645CCE00CBC178 /* HeatMapsView.swift */,
+				AC64A39423645CCD00CBC178 /* HeatMapsView.xib */,
 				C4DB2E3C23644F8000E85895 /* heat.json */,
 				C4DB2E3B23644B6900E85895 /* Header-Bridge.h */,
 				C4DB2E0323644B0800E85895 /* Clustering */,
@@ -400,6 +411,7 @@
 				C4DB2DC82364464400E85895 /* LaunchScreen.storyboard in Resources */,
 				C4DB2DC52364464400E85895 /* Preview Assets.xcassets in Resources */,
 				C4DB2DC22364464400E85895 /* Assets.xcassets in Resources */,
+				AC64A39623645CCE00CBC178 /* HeatMapsView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,13 +471,16 @@
 				C4DB2E3123644B0800E85895 /* GMUClusterManager.m in Sources */,
 				C4DB2E2423644B0800E85895 /* GMUStyleMap.m in Sources */,
 				C4DB2E2623644B0800E85895 /* GMUGroundOverlay.m in Sources */,
+				AC64A391236457C000CBC178 /* MainView.swift in Sources */,
 				C4DB2E2323644B0800E85895 /* GMUPolygon.m in Sources */,
 				C4DB2E412364600D00E85895 /* PlaceManager.swift in Sources */,
+				AC64A3932364580B00CBC178 /* Favourites.swift in Sources */,
 				C4DB2E3723644B0800E85895 /* GMUDefaultClusterIconGenerator.m in Sources */,
 				C4DB2E2A23644B0800E85895 /* GMULineString.m in Sources */,
 				C4DB2E2D23644B0800E85895 /* GMUGradient.m in Sources */,
 				C4DB2E2723644B0800E85895 /* GMUStyle.m in Sources */,
 				C4DB2E2B23644B0800E85895 /* GMUGeoJSONParser.m in Sources */,
+				AC64A39723645CCE00CBC178 /* HeatMapsView.swift in Sources */,
 				C4DB2DBC2364464300E85895 /* AppDelegate.swift in Sources */,
 				C4DB2E3523644B0800E85895 /* GMUNonHierarchicalDistanceBasedAlgorithm.m in Sources */,
 				C4DB2E3223644B0800E85895 /* GMUGridBasedClusterAlgorithm.m in Sources */,
@@ -473,7 +488,6 @@
 				C4DB2E2123644B0800E85895 /* GMUGeometryCollection.m in Sources */,
 				C4DB2E3823644B0800E85895 /* GMUStaticCluster.m in Sources */,
 				C4DB2E2923644B0800E85895 /* GMUPair.m in Sources */,
-				C4DB2E3F236451A800E85895 /* GMapKitView.swift in Sources */,
 				C4DB2E1F23644B0800E85895 /* GMUKMLParser.m in Sources */,
 				C4DB2E3623644B0800E85895 /* GMUDefaultClusterRenderer.m in Sources */,
 				C4DB2DBE2364464300E85895 /* SceneDelegate.swift in Sources */,
@@ -552,7 +566,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -606,7 +620,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -623,7 +637,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ThePlace2019/Preview Content\"";
-				DEVELOPMENT_TEAM = 8YBKQD6YZD;
+				DEVELOPMENT_TEAM = 7PLLZ436SG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ThePlace2019/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -645,7 +659,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ThePlace2019/Preview Content\"";
-				DEVELOPMENT_TEAM = 8YBKQD6YZD;
+				DEVELOPMENT_TEAM = 7PLLZ436SG;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ThePlace2019/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
