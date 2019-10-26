@@ -10,5 +10,5 @@
 #define Header_Bridge_h
 
 #import "GMUMarkerClustering.h"
-
+#import "GMUHeatmapTileLayer.h"
 #endif /* Header_Bridge_h */

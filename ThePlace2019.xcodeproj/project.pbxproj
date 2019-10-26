@@ -43,6 +43,7 @@
 		C4DB2E3623644B0800E85895 /* GMUDefaultClusterRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DB2E1723644B0800E85895 /* GMUDefaultClusterRenderer.m */; };
 		C4DB2E3723644B0800E85895 /* GMUDefaultClusterIconGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DB2E1923644B0800E85895 /* GMUDefaultClusterIconGenerator.m */; };
 		C4DB2E3823644B0800E85895 /* GMUStaticCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DB2E1C23644B0800E85895 /* GMUStaticCluster.m */; };
+		C4DB2E3D23644F8000E85895 /* heat.json in Resources */ = {isa = PBXBuildFile; fileRef = C4DB2E3C23644F8000E85895 /* heat.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -127,6 +128,7 @@
 		C4DB2E1D23644B0800E85895 /* GMUCluster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUCluster.h; sourceTree = "<group>"; };
 		C4DB2E1E23644B0800E85895 /* GMUClusterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUClusterItem.h; sourceTree = "<group>"; };
 		C4DB2E3B23644B6900E85895 /* Header-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Header-Bridge.h"; sourceTree = "<group>"; };
+		C4DB2E3C23644F8000E85895 /* heat.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = heat.json; sourceTree = "<group>"; };
 		EC027A34C9E5A122274D9F53 /* Pods-ThePlace2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThePlace2019.release.xcconfig"; path = "Target Support Files/Pods-ThePlace2019/Pods-ThePlace2019.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -186,6 +188,7 @@
 				C4DB2DD32364477400E85895 /* UIView+extension.swift */,
 				C4DB2DCF236446FD00E85895 /* MapController.swift */,
 				C4DB2DD12364470800E85895 /* MapController.xib */,
+				C4DB2E3C23644F8000E85895 /* heat.json */,
 				C4DB2E3B23644B6900E85895 /* Header-Bridge.h */,
 				C4DB2E0323644B0800E85895 /* Clustering */,
 				C4DB2DD523644B0700E85895 /* Geometry */,
@@ -386,6 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4DB2E3D23644F8000E85895 /* heat.json in Resources */,
 				C4DB2DD22364470800E85895 /* MapController.xib in Resources */,
 				C4DB2DC82364464400E85895 /* LaunchScreen.storyboard in Resources */,
 				C4DB2DC52364464400E85895 /* Preview Assets.xcassets in Resources */,
