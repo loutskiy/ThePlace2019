@@ -48,8 +48,10 @@
 		C4DB2E3723644B0800E85895 /* GMUDefaultClusterIconGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DB2E1923644B0800E85895 /* GMUDefaultClusterIconGenerator.m */; };
 		C4DB2E3823644B0800E85895 /* GMUStaticCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DB2E1C23644B0800E85895 /* GMUStaticCluster.m */; };
 		C4DB2E3D23644F8000E85895 /* heat.json in Resources */ = {isa = PBXBuildFile; fileRef = C4DB2E3C23644F8000E85895 /* heat.json */; };
-		C4DB2E3F236451A800E85895 /* GMapKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DB2E3E236451A800E85895 /* GMapKitView.swift */; };
 		C4DB2E412364600D00E85895 /* PlaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DB2E402364600D00E85895 /* PlaceManager.swift */; };
+		C4EBDBF123647A390082D71D /* GImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBDBF023647A390082D71D /* GImageManager.swift */; };
+		C4EBDBF823647DE10082D71D /* SearchAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBDBF623647DE10082D71D /* SearchAddressVC.swift */; };
+		C4EBDBF923647DE10082D71D /* SearchAddressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4EBDBF723647DE10082D71D /* SearchAddressVC.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,8 +141,10 @@
 		C4DB2E1E23644B0800E85895 /* GMUClusterItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMUClusterItem.h; sourceTree = "<group>"; };
 		C4DB2E3B23644B6900E85895 /* Header-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Header-Bridge.h"; sourceTree = "<group>"; };
 		C4DB2E3C23644F8000E85895 /* heat.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = heat.json; sourceTree = "<group>"; };
-		C4DB2E3E236451A800E85895 /* GMapKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GMapKitView.swift; sourceTree = "<group>"; };
 		C4DB2E402364600D00E85895 /* PlaceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceManager.swift; sourceTree = "<group>"; };
+		C4EBDBF023647A390082D71D /* GImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GImageManager.swift; sourceTree = "<group>"; };
+		C4EBDBF623647DE10082D71D /* SearchAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAddressVC.swift; sourceTree = "<group>"; };
+		C4EBDBF723647DE10082D71D /* SearchAddressVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchAddressVC.xib; sourceTree = "<group>"; };
 		EC027A34C9E5A122274D9F53 /* Pods-ThePlace2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThePlace2019.release.xcconfig"; path = "Target Support Files/Pods-ThePlace2019/Pods-ThePlace2019.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -205,6 +209,9 @@
 				C4DB2E402364600D00E85895 /* PlaceManager.swift */,
 				AC64A39523645CCE00CBC178 /* HeatMapsView.swift */,
 				AC64A39423645CCD00CBC178 /* HeatMapsView.xib */,
+				C4EBDBF023647A390082D71D /* GImageManager.swift */,
+				C4EBDBF623647DE10082D71D /* SearchAddressVC.swift */,
+				C4EBDBF723647DE10082D71D /* SearchAddressVC.xib */,
 				C4DB2E3C23644F8000E85895 /* heat.json */,
 				C4DB2E3B23644B6900E85895 /* Header-Bridge.h */,
 				C4DB2E0323644B0800E85895 /* Clustering */,
@@ -358,6 +365,7 @@
 				C4DB2DB52364464300E85895 /* Frameworks */,
 				C4DB2DB62364464300E85895 /* Resources */,
 				4994A0976D69D98310AC8AF2 /* [CP] Copy Pods Resources */,
+				8278F20E7F36BB759BB49FAC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -407,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4DB2E3D23644F8000E85895 /* heat.json in Resources */,
+				C4EBDBF923647DE10082D71D /* SearchAddressVC.xib in Resources */,
 				C4DB2DD22364470800E85895 /* MapController.xib in Resources */,
 				C4DB2DC82364464400E85895 /* LaunchScreen.storyboard in Resources */,
 				C4DB2DC52364464400E85895 /* Preview Assets.xcassets in Resources */,
@@ -457,6 +466,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThePlace2019/Pods-ThePlace2019-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		8278F20E7F36BB759BB49FAC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThePlace2019/Pods-ThePlace2019-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThePlace2019/Pods-ThePlace2019-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThePlace2019/Pods-ThePlace2019-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -486,6 +512,7 @@
 				C4DB2E3223644B0800E85895 /* GMUGridBasedClusterAlgorithm.m in Sources */,
 				C4DB2E2C23644B0800E85895 /* GMUWeightedLatLng.m in Sources */,
 				C4DB2E2123644B0800E85895 /* GMUGeometryCollection.m in Sources */,
+				C4EBDBF823647DE10082D71D /* SearchAddressVC.swift in Sources */,
 				C4DB2E3823644B0800E85895 /* GMUStaticCluster.m in Sources */,
 				C4DB2E2923644B0800E85895 /* GMUPair.m in Sources */,
 				C4DB2E1F23644B0800E85895 /* GMUKMLParser.m in Sources */,
@@ -495,6 +522,7 @@
 				C4DB2E2E23644B0800E85895 /* GMUHeatmapTileLayer.m in Sources */,
 				C4DB2E3423644B0800E85895 /* GMUSimpleClusterAlgorithm.m in Sources */,
 				C4DB2E3323644B0800E85895 /* GMUWrappingDictionaryKey.m in Sources */,
+				C4EBDBF123647A390082D71D /* GImageManager.swift in Sources */,
 				C4DB2E3023644B0800E85895 /* GQTPointQuadTreeChild.m in Sources */,
 				C4DB2E2223644B0800E85895 /* GMUPlacemark.m in Sources */,
 				C4DB2DC02364464300E85895 /* ContentView.swift in Sources */,

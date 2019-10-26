@@ -14,6 +14,8 @@ class MapController: UIView {
     @IBOutlet var contentView: UIView!
     @IBOutlet weak var mapView: GMSMapView!
     
+    private var markers = [GMSMarker]()
+    
     private var heatmapLayer: GMUHeatmapTileLayer!
     
     override init(frame: CGRect) {
@@ -29,6 +31,9 @@ class MapController: UIView {
     func commonInit() {
         Bundle.main.loadNibNamed(kCONTENT_XIB_NAME, owner: self, options: nil)
         contentView.fixInView(self)
+        
+        mapView.delegate = self
+        
         heatmapLayer = GMUHeatmapTileLayer()
         heatmapLayer.radius = 500
         addHeatmap()
@@ -49,7 +54,7 @@ class MapController: UIView {
             for item in object {
               let lat = item["lat"]
               let lng = item["lng"]
-              let coords = GMUWeightedLatLng(coordinate: CLLocationCoordinate2DMake(lat as! CLLocationDegrees, lng as! CLLocationDegrees), intensity: 100.0)
+              let coords = GMUWeightedLatLng(coordinate: CLLocationCoordinate2DMake(lat as! CLLocationDegrees, lng as! CLLocationDegrees), intensity: 1.0)
               list.append(coords)
             }
           } else {
@@ -61,5 +66,28 @@ class MapController: UIView {
       }
       // Add the latlngs to the heatmap layer.
       heatmapLayer.weightedData = list
+    }
+    
+    func addMarker(coords: CLLocationCoordinate2D) {
+        let marker = GMSMarker(position: coords)
+        marker.map = mapView
+    }
+    
+    func clearAllMarkers() {
+        for marker in markers {
+            marker.map = nil
+        }
+        markers.removeAll()
+    }
+    
+}
+
+extension MapController: GMSMapViewDelegate {
+    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        return true
+    }
+    
+    func mapView(_ mapView: GMSMapView, didTapInfoWindowOf marker: GMSMarker) {
+        
     }
 }
