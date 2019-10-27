@@ -70,8 +70,8 @@ class ValueModel: Mappable {
 }
 
 class CoordsModel: Mappable {
-    var lat: String!
-    var lng: String!
+    var lat: Double!
+    var lng: Double!
     
     required init?(map: Map) {
         
@@ -79,7 +79,7 @@ class CoordsModel: Mappable {
     
     func mapping(map: Map) {
         lat <- map["lat"]
-        lng <- map["lng"]
+        lng <- map["long"]
     }
 }
 

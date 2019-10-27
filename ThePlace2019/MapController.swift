@@ -8,6 +8,8 @@
 
 import UIKit
 import Firebase
+import Alamofire
+import ObjectMapper
 
 protocol MapControllerDelegate: NSObject {
     func didTapOnMapObject(coords: CLLocationCoordinate2D)
@@ -74,29 +76,41 @@ class MapController: UIView {
     }
     
     func addHeatmap(resource: String = "air")  {
-      var list = [GMUWeightedLatLng]()
-      do {
-        // Get the data: latitude/longitude positions of police stations.
-        if let path = Bundle.main.url(forResource: resource, withExtension: "json") {
-          let data = try Data(contentsOf: path)
-          let json = try JSONSerialization.jsonObject(with: data, options: [])
-          if let object = json as? [[String: Any]] {
-            for item in object {
-              let lat = item["lat"]
-              let lng = item["long"]
-              let coords = GMUWeightedLatLng(coordinate: CLLocationCoordinate2DMake(lat as! CLLocationDegrees, lng as! CLLocationDegrees), intensity: 1.0)
-              list.append(coords)
+        
+        AF.request("http://lwts.ru/\(resource).json").responseJSON { (response) in
+            var list = [GMUWeightedLatLng]()
+            let coords = Mapper<CoordsModel>().mapArray(JSONObject: response.value) ?? [CoordsModel]()
+            for coord in coords {
+                let coords = GMUWeightedLatLng(coordinate: CLLocationCoordinate2DMake(coord.lat, coord.lng), intensity: 1.0)
+                list.append(coords)
             }
-          } else {
-            print("Could not read the JSON.")
-          }
+            self.heatmapLayer.weightedData = list
+            self.heatmapLayer.map = self.mapView
         }
-      } catch {
-        print(error.localizedDescription)
-      }
-      // Add the latlngs to the heatmap layer.
-      heatmapLayer.weightedData = list
-        heatmapLayer.map = mapView
+//
+//      var list = [GMUWeightedLatLng]()
+//      do {
+//        // Get the data: latitude/longitude positions of police stations.
+//        if let path = Bundle.main.url(forResource: resource, withExtension: "json") {
+//          let data = try Data(contentsOf: path)
+//          let json = try JSONSerialization.jsonObject(with: data, options: [])
+//          if let object = json as? [[String: Any]] {
+//            for item in object {
+//              let lat = item["lat"]
+//              let lng = item["long"]
+//              let coords = GMUWeightedLatLng(coordinate: CLLocationCoordinate2DMake(lat as! CLLocationDegrees, lng as! CLLocationDegrees), intensity: 1.0)
+//              list.append(coords)
+//            }
+//          } else {
+//            print("Could not read the JSON.")
+//          }
+//        }
+//      } catch {
+//        print(error.localizedDescription)
+//      }
+//      // Add the latlngs to the heatmap layer.
+//      heatmapLayer.weightedData = list
+//        heatmapLayer.map = mapView
 
     }
     
