@@ -97,7 +97,7 @@ class DetailVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
         lineGraphView.layout.yAxisSegmentCount = 3
         lineGraphView.layout.yAxisLabelColor = UIColor(hexString: "042C5C", alpha: 1)
         lineGraphView.layout.xAxisScrollableOnly = false
-        lineGraphView.title = "Population "
+        lineGraphView.title = "Population"
 //        lineGraphView.layout.xAxisMargin = -45
 //        lineGraphView.layout.xAxisIntervalInPx = 900
         
@@ -120,7 +120,7 @@ class DetailVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
     }
     
     @objc func addToFavorite() {
-        CoreDataManager.addToFav(emoji: StorageManager.shared.pinStructure.emoji, title: StorageManager.shared.pinStructure.title, address: "123")
+        CoreDataManager.addToFav(emoji: StorageManager.shared.pinStructure.emoji, title: StorageManager.shared.pinStructure.title, address: "Hungary 🇭🇺")
         let right = UIBarButtonItem(image: UIImage(named: "star-2"), style: .done, target: self, action: #selector(addToFavorite))
         navigationItem.rightBarButtonItem = right
     }

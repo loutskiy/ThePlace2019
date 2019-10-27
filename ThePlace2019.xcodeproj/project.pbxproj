@@ -60,6 +60,8 @@
 		C4E252732365181C00D97CE7 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E252712365181C00D97CE7 /* FavoritesVC.swift */; };
 		C4E25277236518F600D97CE7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4E25275236518F600D97CE7 /* Model.xcdatamodeld */; };
 		C4E252792365193700D97CE7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E252782365193700D97CE7 /* CoreDataManager.swift */; };
+		C4E2527C2365239B00D97CE7 /* FavoritesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E2527A2365239B00D97CE7 /* FavoritesCell.swift */; };
+		C4E2527D2365239B00D97CE7 /* FavoritesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E2527B2365239B00D97CE7 /* FavoritesCell.xib */; };
 		C4EBDBF123647A390082D71D /* GImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBDBF023647A390082D71D /* GImageManager.swift */; };
 		C4EBDBF823647DE10082D71D /* SearchAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBDBF623647DE10082D71D /* SearchAddressVC.swift */; };
 		C4EBDBF923647DE10082D71D /* SearchAddressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4EBDBF723647DE10082D71D /* SearchAddressVC.xib */; };
@@ -174,6 +176,8 @@
 		C4E252712365181C00D97CE7 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
 		C4E25276236518F600D97CE7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		C4E252782365193700D97CE7 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		C4E2527A2365239B00D97CE7 /* FavoritesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCell.swift; sourceTree = "<group>"; };
+		C4E2527B2365239B00D97CE7 /* FavoritesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesCell.xib; sourceTree = "<group>"; };
 		C4EBDBF023647A390082D71D /* GImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GImageManager.swift; sourceTree = "<group>"; };
 		C4EBDBF623647DE10082D71D /* SearchAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAddressVC.swift; sourceTree = "<group>"; };
 		C4EBDBF723647DE10082D71D /* SearchAddressVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchAddressVC.xib; sourceTree = "<group>"; };
@@ -276,6 +280,8 @@
 				C4E252692364FDD400D97CE7 /* VisionModel.swift */,
 				C4E2526B2365095600D97CE7 /* StorageManager.swift */,
 				C4E252712365181C00D97CE7 /* FavoritesVC.swift */,
+				C4E2527A2365239B00D97CE7 /* FavoritesCell.swift */,
+				C4E2527B2365239B00D97CE7 /* FavoritesCell.xib */,
 				C4D4C0F82364EDE5001064FF /* air.json */,
 				C4D4C0FA2364EDEB001064FF /* water.json */,
 				C4D4C0FC2364EDF0001064FF /* forest.json */,
@@ -487,6 +493,7 @@
 				C4EBDBFC23648DE20082D71D /* GoogleService-Info.plist in Resources */,
 				C4E25270236513FA00D97CE7 /* PlaceCell.xib in Resources */,
 				C4EBDBF923647DE10082D71D /* SearchAddressVC.xib in Resources */,
+				C4E2527D2365239B00D97CE7 /* FavoritesCell.xib in Resources */,
 				C4DB2DD22364470800E85895 /* MapController.xib in Resources */,
 				C4DB2DC82364464400E85895 /* LaunchScreen.storyboard in Resources */,
 				C4D4C0FD2364EDF0001064FF /* forest.json in Resources */,
@@ -604,6 +611,7 @@
 				C4DB2E3623644B0800E85895 /* GMUDefaultClusterRenderer.m in Sources */,
 				C4DB2E2523644B0800E85895 /* GMUFeature.m in Sources */,
 				C4DB2E2E23644B0800E85895 /* GMUHeatmapTileLayer.m in Sources */,
+				C4E2527C2365239B00D97CE7 /* FavoritesCell.swift in Sources */,
 				C4DB2E3423644B0800E85895 /* GMUSimpleClusterAlgorithm.m in Sources */,
 				C4EBDC112364D12B0082D71D /* EmojiCell.swift in Sources */,
 				C4DB2E3323644B0800E85895 /* GMUWrappingDictionaryKey.m in Sources */,

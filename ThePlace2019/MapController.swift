@@ -46,7 +46,11 @@ class MapController: UIView {
         heatmapLayer = GMUHeatmapTileLayer()
         heatmapLayer.radius = 100
         addHeatmap()
-//        heatmapLayer.map = mapView
+        
+        let camera = GMSCameraPosition.camera(withLatitude: 47.495348, longitude: 19.046751, zoom: 11
+        )
+                   mapView.camera = camera
+        heatmapLayer.map = mapView
         
         let db = Firestore.firestore()
 //        db.collection("hackathon").document("data").setData(["coordinates" : "1234"])
