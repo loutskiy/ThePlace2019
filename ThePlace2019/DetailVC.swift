@@ -40,6 +40,8 @@ class DetailVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        navigationController?.view.backgroundColor = UIColor(hexString: "48B853", alpha: 1.0)
 
         title = "Your building"
         
@@ -87,6 +89,12 @@ class DetailVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
 //         Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.view.backgroundColor = UIColor(hexString: "48B853", alpha: 1.0)
+
+    }
+    
     func setGraph() {
         lineGraphView.xAxisValues = [[1: "01"], [2: "02"], [3: "03"], [4: "04"], [5: "05"], [6: "06"]]
         lineGraphView.layout.xAxisLabelColor = UIColor(hexString: "042C5C", alpha: 1)
@@ -120,7 +128,9 @@ class DetailVC: UIViewController, UICollectionViewDelegate, UICollectionViewData
     }
     
     @objc func addToFavorite() {
-        CoreDataManager.addToFav(emoji: StorageManager.shared.pinStructure.emoji, title: StorageManager.shared.pinStructure.title, address: "Hungary 🇭🇺")
+        let addresses = ["Budapest, Zrínyi utca, Hungary", "Budapest, Haller utca, Hungary", "Budapest, Izabella utca, Hungary", "Budapest, Paulay Ede utca, Hungary", "Budapest, Quell Rudolf utca, Hungary"]
+        let randomInt = Int.random(in: 0..<addresses.count)
+        CoreDataManager.addToFav(emoji: StorageManager.shared.pinStructure.emoji, title: StorageManager.shared.pinStructure.title, address: addresses[randomInt])
         let right = UIBarButtonItem(image: UIImage(named: "star-2"), style: .done, target: self, action: #selector(addToFavorite))
         navigationItem.rightBarButtonItem = right
     }
