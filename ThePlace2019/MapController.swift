@@ -7,6 +7,11 @@
 //
 
 import UIKit
+import Firebase
+
+protocol MapControllerDelegate: NSObject {
+    func didTapOnMapObject(coords: CLLocationCoordinate2D)
+}
 
 class MapController: UIView {
 
@@ -17,6 +22,8 @@ class MapController: UIView {
     private var markers = [GMSMarker]()
     
     private var heatmapLayer: GMUHeatmapTileLayer!
+    
+    weak var delegate: MapControllerDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -35,25 +42,48 @@ class MapController: UIView {
         mapView.delegate = self
         
         heatmapLayer = GMUHeatmapTileLayer()
-        heatmapLayer.radius = 500
+        heatmapLayer.radius = 100
         addHeatmap()
-        heatmapLayer.map = mapView
+//        heatmapLayer.map = mapView
         
+        let db = Firestore.firestore()
+//        db.collection("hackathon").document("data").setData(["coordinates" : "1234"])
+        
+        db.collection("hackathon").document("data").getDocument { (document, error) in
+            if let document = document, document.exists {
+                let dataDescription = document.data().map(String.init(describing:)) ?? "nil"
+                print("Document data: \(dataDescription)")
+            } else {
+                print("Document does not exist")
+            }
+        }
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(getAddress(_:)), name: Notification.Name(rawValue: "getAddress"), object: nil)
 //        contentView.layer.cornerRadius = 4.0
 //        contentView.layer.borderWidth = 1.0
     }
     
-    func addHeatmap()  {
+    @objc func getAddress(_ notification: Notification) {
+        if let userInfo = notification.userInfo as? [String: CLLocationCoordinate2D], let coords = userInfo["coords"] {
+            let camera = GMSCameraPosition.camera(withLatitude: coords.latitude, longitude: coords.longitude, zoom: 12)
+            mapView.camera = camera
+            
+            let marker = GMSMarker(position: coords)
+            marker.map = mapView
+        }
+    }
+    
+    func addHeatmap(resource: String = "air")  {
       var list = [GMUWeightedLatLng]()
       do {
         // Get the data: latitude/longitude positions of police stations.
-        if let path = Bundle.main.url(forResource: "heat", withExtension: "json") {
+        if let path = Bundle.main.url(forResource: resource, withExtension: "json") {
           let data = try Data(contentsOf: path)
           let json = try JSONSerialization.jsonObject(with: data, options: [])
           if let object = json as? [[String: Any]] {
             for item in object {
               let lat = item["lat"]
-              let lng = item["lng"]
+              let lng = item["long"]
               let coords = GMUWeightedLatLng(coordinate: CLLocationCoordinate2DMake(lat as! CLLocationDegrees, lng as! CLLocationDegrees), intensity: 1.0)
               list.append(coords)
             }
@@ -66,6 +96,8 @@ class MapController: UIView {
       }
       // Add the latlngs to the heatmap layer.
       heatmapLayer.weightedData = list
+        heatmapLayer.map = mapView
+
     }
     
     func addMarker(coords: CLLocationCoordinate2D) {
@@ -84,6 +116,8 @@ class MapController: UIView {
 
 extension MapController: GMSMapViewDelegate {
     func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        print("tap on marker")
+        delegate?.didTapOnMapObject(coords: marker.position)
         return true
     }
     

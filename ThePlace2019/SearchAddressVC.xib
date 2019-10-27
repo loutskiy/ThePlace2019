@@ -19,7 +19,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="vLr-E1-eTs"/>
-            <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" id="2Kk-bB-gKF">
+            <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" placeholder="Search here" id="2Kk-bB-gKF">
                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                 <textInputTraits key="textInputTraits"/>

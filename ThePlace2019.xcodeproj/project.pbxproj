@@ -13,8 +13,11 @@
 		AC64A39623645CCE00CBC178 /* HeatMapsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC64A39423645CCD00CBC178 /* HeatMapsView.xib */; };
 		AC64A39723645CCE00CBC178 /* HeatMapsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC64A39523645CCE00CBC178 /* HeatMapsView.swift */; };
 		AC64A3A1236480D400CBC178 /* PlaceManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC64A3A0236480D400CBC178 /* PlaceManagerView.swift */; };
+		C4D4C0F72364E9CA001064FF /* UIColor+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4D4C0F62364E9CA001064FF /* UIColor+extension.swift */; };
+		C4D4C0F92364EDE6001064FF /* air.json in Resources */ = {isa = PBXBuildFile; fileRef = C4D4C0F82364EDE5001064FF /* air.json */; };
+		C4D4C0FB2364EDEB001064FF /* water.json in Resources */ = {isa = PBXBuildFile; fileRef = C4D4C0FA2364EDEB001064FF /* water.json */; };
+		C4D4C0FD2364EDF0001064FF /* forest.json in Resources */ = {isa = PBXBuildFile; fileRef = C4D4C0FC2364EDF0001064FF /* forest.json */; };
 		C4DB2DBC2364464300E85895 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DB2DBB2364464300E85895 /* AppDelegate.swift */; };
-		C4DB2DBE2364464300E85895 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DB2DBD2364464300E85895 /* SceneDelegate.swift */; };
 		C4DB2DC02364464300E85895 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DB2DBF2364464300E85895 /* ContentView.swift */; };
 		C4DB2DC22364464400E85895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DB2DC12364464400E85895 /* Assets.xcassets */; };
 		C4DB2DC52364464400E85895 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4DB2DC42364464400E85895 /* Preview Assets.xcassets */; };
@@ -50,9 +53,26 @@
 		C4DB2E3823644B0800E85895 /* GMUStaticCluster.m in Sources */ = {isa = PBXBuildFile; fileRef = C4DB2E1C23644B0800E85895 /* GMUStaticCluster.m */; };
 		C4DB2E3D23644F8000E85895 /* heat.json in Resources */ = {isa = PBXBuildFile; fileRef = C4DB2E3C23644F8000E85895 /* heat.json */; };
 		C4DB2E412364600D00E85895 /* PlaceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4DB2E402364600D00E85895 /* PlaceManager.swift */; };
+		C4E2526A2364FDD400D97CE7 /* VisionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E252692364FDD400D97CE7 /* VisionModel.swift */; };
+		C4E2526C2365095600D97CE7 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E2526B2365095600D97CE7 /* StorageManager.swift */; };
+		C4E2526F236513FA00D97CE7 /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E2526D236513FA00D97CE7 /* PlaceCell.swift */; };
+		C4E25270236513FA00D97CE7 /* PlaceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4E2526E236513FA00D97CE7 /* PlaceCell.xib */; };
+		C4E252732365181C00D97CE7 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E252712365181C00D97CE7 /* FavoritesVC.swift */; };
+		C4E25277236518F600D97CE7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4E25275236518F600D97CE7 /* Model.xcdatamodeld */; };
+		C4E252792365193700D97CE7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4E252782365193700D97CE7 /* CoreDataManager.swift */; };
 		C4EBDBF123647A390082D71D /* GImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBDBF023647A390082D71D /* GImageManager.swift */; };
 		C4EBDBF823647DE10082D71D /* SearchAddressVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBDBF623647DE10082D71D /* SearchAddressVC.swift */; };
 		C4EBDBF923647DE10082D71D /* SearchAddressVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4EBDBF723647DE10082D71D /* SearchAddressVC.xib */; };
+		C4EBDBFC23648DE20082D71D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C4EBDBFB23648DE20082D71D /* GoogleService-Info.plist */; };
+		C4EBDC022364A4F60082D71D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EBDC012364A4F60082D71D /* Main.storyboard */; };
+		C4EBDC042364B17E0082D71D /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBDC032364B17E0082D71D /* MapVC.swift */; };
+		C4EBDC062364B63E0082D71D /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBDC052364B63E0082D71D /* FilterVC.swift */; };
+		C4EBDC082364BB8D0082D71D /* FilterLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBDC072364BB8D0082D71D /* FilterLayout.swift */; };
+		C4EBDC0A2364BD780082D71D /* FilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBDC092364BD780082D71D /* FilterCell.swift */; };
+		C4EBDC0D2364CC200082D71D /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBDC0B2364CC200082D71D /* DetailVC.swift */; };
+		C4EBDC0E2364CC200082D71D /* DetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4EBDC0C2364CC200082D71D /* DetailVC.xib */; };
+		C4EBDC112364D12B0082D71D /* EmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EBDC0F2364D12B0082D71D /* EmojiCell.swift */; };
+		C4EBDC122364D12B0082D71D /* EmojiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4EBDC102364D12B0082D71D /* EmojiCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,9 +83,12 @@
 		AC64A39423645CCD00CBC178 /* HeatMapsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeatMapsView.xib; sourceTree = "<group>"; };
 		AC64A39523645CCE00CBC178 /* HeatMapsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeatMapsView.swift; sourceTree = "<group>"; };
 		AC64A3A0236480D400CBC178 /* PlaceManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceManagerView.swift; sourceTree = "<group>"; };
+		C4D4C0F62364E9CA001064FF /* UIColor+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+extension.swift"; sourceTree = "<group>"; };
+		C4D4C0F82364EDE5001064FF /* air.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = air.json; sourceTree = "<group>"; };
+		C4D4C0FA2364EDEB001064FF /* water.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = water.json; sourceTree = "<group>"; };
+		C4D4C0FC2364EDF0001064FF /* forest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = forest.json; sourceTree = "<group>"; };
 		C4DB2DB82364464300E85895 /* ThePlace2019.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThePlace2019.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4DB2DBB2364464300E85895 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C4DB2DBD2364464300E85895 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C4DB2DBF2364464300E85895 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C4DB2DC12364464400E85895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4DB2DC42364464400E85895 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -144,9 +167,27 @@
 		C4DB2E3B23644B6900E85895 /* Header-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Header-Bridge.h"; sourceTree = "<group>"; };
 		C4DB2E3C23644F8000E85895 /* heat.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = heat.json; sourceTree = "<group>"; };
 		C4DB2E402364600D00E85895 /* PlaceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceManager.swift; sourceTree = "<group>"; };
+		C4E252692364FDD400D97CE7 /* VisionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionModel.swift; sourceTree = "<group>"; };
+		C4E2526B2365095600D97CE7 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		C4E2526D236513FA00D97CE7 /* PlaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		C4E2526E236513FA00D97CE7 /* PlaceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceCell.xib; sourceTree = "<group>"; };
+		C4E252712365181C00D97CE7 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
+		C4E25276236518F600D97CE7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		C4E252782365193700D97CE7 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		C4EBDBF023647A390082D71D /* GImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GImageManager.swift; sourceTree = "<group>"; };
 		C4EBDBF623647DE10082D71D /* SearchAddressVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAddressVC.swift; sourceTree = "<group>"; };
 		C4EBDBF723647DE10082D71D /* SearchAddressVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchAddressVC.xib; sourceTree = "<group>"; };
+		C4EBDBFA236487F70082D71D /* ThePlace2019.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ThePlace2019.entitlements; sourceTree = "<group>"; };
+		C4EBDBFB23648DE20082D71D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C4EBDC012364A4F60082D71D /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		C4EBDC032364B17E0082D71D /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		C4EBDC052364B63E0082D71D /* FilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVC.swift; sourceTree = "<group>"; };
+		C4EBDC072364BB8D0082D71D /* FilterLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterLayout.swift; sourceTree = "<group>"; };
+		C4EBDC092364BD780082D71D /* FilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCell.swift; sourceTree = "<group>"; };
+		C4EBDC0B2364CC200082D71D /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		C4EBDC0C2364CC200082D71D /* DetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailVC.xib; sourceTree = "<group>"; };
+		C4EBDC0F2364D12B0082D71D /* EmojiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCell.swift; sourceTree = "<group>"; };
+		C4EBDC102364D12B0082D71D /* EmojiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmojiCell.xib; sourceTree = "<group>"; };
 		EC027A34C9E5A122274D9F53 /* Pods-ThePlace2019.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThePlace2019.release.xcconfig"; path = "Target Support Files/Pods-ThePlace2019/Pods-ThePlace2019.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -200,9 +241,12 @@
 		C4DB2DBA2364464300E85895 /* ThePlace2019 */ = {
 			isa = PBXGroup;
 			children = (
+				C4EBDBFB23648DE20082D71D /* GoogleService-Info.plist */,
+				C4EBDBFA236487F70082D71D /* ThePlace2019.entitlements */,
 				C4DB2DBB2364464300E85895 /* AppDelegate.swift */,
-				C4DB2DBD2364464300E85895 /* SceneDelegate.swift */,
+				C4E25275236518F600D97CE7 /* Model.xcdatamodeld */,
 				AC64A390236457C000CBC178 /* MainView.swift */,
+				C4E252782365193700D97CE7 /* CoreDataManager.swift */,
 				C4DB2DBF2364464300E85895 /* ContentView.swift */,
 				AC64A3922364580B00CBC178 /* Favourites.swift */,
 				C4DB2DD32364477400E85895 /* UIView+extension.swift */,
@@ -217,6 +261,24 @@
 				C4EBDBF723647DE10082D71D /* SearchAddressVC.xib */,
 				C4DB2E3C23644F8000E85895 /* heat.json */,
 				C4DB2E3B23644B6900E85895 /* Header-Bridge.h */,
+				C4EBDC012364A4F60082D71D /* Main.storyboard */,
+				C4EBDC032364B17E0082D71D /* MapVC.swift */,
+				C4EBDC052364B63E0082D71D /* FilterVC.swift */,
+				C4EBDC092364BD780082D71D /* FilterCell.swift */,
+				C4EBDC072364BB8D0082D71D /* FilterLayout.swift */,
+				C4EBDC0B2364CC200082D71D /* DetailVC.swift */,
+				C4EBDC0C2364CC200082D71D /* DetailVC.xib */,
+				C4EBDC0F2364D12B0082D71D /* EmojiCell.swift */,
+				C4EBDC102364D12B0082D71D /* EmojiCell.xib */,
+				C4E2526D236513FA00D97CE7 /* PlaceCell.swift */,
+				C4E2526E236513FA00D97CE7 /* PlaceCell.xib */,
+				C4D4C0F62364E9CA001064FF /* UIColor+extension.swift */,
+				C4E252692364FDD400D97CE7 /* VisionModel.swift */,
+				C4E2526B2365095600D97CE7 /* StorageManager.swift */,
+				C4E252712365181C00D97CE7 /* FavoritesVC.swift */,
+				C4D4C0F82364EDE5001064FF /* air.json */,
+				C4D4C0FA2364EDEB001064FF /* water.json */,
+				C4D4C0FC2364EDF0001064FF /* forest.json */,
 				C4DB2E0323644B0800E85895 /* Clustering */,
 				C4DB2DD523644B0700E85895 /* Geometry */,
 				C4DB2DF423644B0700E85895 /* Heatmap */,
@@ -368,6 +430,7 @@
 				C4DB2DB52364464300E85895 /* Frameworks */,
 				C4DB2DB62364464300E85895 /* Resources */,
 				4994A0976D69D98310AC8AF2 /* [CP] Copy Pods Resources */,
+				B7322EEB2DB6F431BD1FCC08 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -384,6 +447,9 @@
 		C4DB2DB02364464300E85895 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					1,
+				);
 				LastSwiftUpdateCheck = 1110;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Mikhail Lutskii";
@@ -417,12 +483,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4DB2E3D23644F8000E85895 /* heat.json in Resources */,
+				C4EBDC022364A4F60082D71D /* Main.storyboard in Resources */,
+				C4EBDBFC23648DE20082D71D /* GoogleService-Info.plist in Resources */,
+				C4E25270236513FA00D97CE7 /* PlaceCell.xib in Resources */,
 				C4EBDBF923647DE10082D71D /* SearchAddressVC.xib in Resources */,
 				C4DB2DD22364470800E85895 /* MapController.xib in Resources */,
 				C4DB2DC82364464400E85895 /* LaunchScreen.storyboard in Resources */,
+				C4D4C0FD2364EDF0001064FF /* forest.json in Resources */,
 				C4DB2DC52364464400E85895 /* Preview Assets.xcassets in Resources */,
 				C4DB2DC22364464400E85895 /* Assets.xcassets in Resources */,
+				C4D4C0F92364EDE6001064FF /* air.json in Resources */,
 				AC64A39623645CCE00CBC178 /* HeatMapsView.xib in Resources */,
+				C4D4C0FB2364EDEB001064FF /* water.json in Resources */,
+				C4EBDC0E2364CC200082D71D /* DetailVC.xib in Resources */,
+				C4EBDC122364D12B0082D71D /* EmojiCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +542,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThePlace2019/Pods-ThePlace2019-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B7322EEB2DB6F431BD1FCC08 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThePlace2019/Pods-ThePlace2019-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ThePlace2019/Pods-ThePlace2019-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ThePlace2019/Pods-ThePlace2019-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -475,12 +566,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4EBDC062364B63E0082D71D /* FilterVC.swift in Sources */,
 				C4DB2E2823644B0800E85895 /* GMUPoint.m in Sources */,
 				C4DB2DD42364477400E85895 /* UIView+extension.swift in Sources */,
 				C4DB2E2F23644B0800E85895 /* GQTPointQuadTree.m in Sources */,
 				C4DB2DD0236446FD00E85895 /* MapController.swift in Sources */,
 				C4DB2E3123644B0800E85895 /* GMUClusterManager.m in Sources */,
+				C4EBDC0A2364BD780082D71D /* FilterCell.swift in Sources */,
 				C4DB2E2423644B0800E85895 /* GMUStyleMap.m in Sources */,
+				C4E252732365181C00D97CE7 /* FavoritesVC.swift in Sources */,
 				C4DB2E2623644B0800E85895 /* GMUGroundOverlay.m in Sources */,
 				AC64A391236457C000CBC178 /* MainView.swift in Sources */,
 				C4DB2E2323644B0800E85895 /* GMUPolygon.m in Sources */,
@@ -490,10 +584,14 @@
 				C4DB2E2A23644B0800E85895 /* GMULineString.m in Sources */,
 				C4DB2E2D23644B0800E85895 /* GMUGradient.m in Sources */,
 				C4DB2E2723644B0800E85895 /* GMUStyle.m in Sources */,
+				C4E252792365193700D97CE7 /* CoreDataManager.swift in Sources */,
 				C4DB2E2B23644B0800E85895 /* GMUGeoJSONParser.m in Sources */,
 				AC64A39723645CCE00CBC178 /* HeatMapsView.swift in Sources */,
+				C4D4C0F72364E9CA001064FF /* UIColor+extension.swift in Sources */,
 				C4DB2DBC2364464300E85895 /* AppDelegate.swift in Sources */,
 				C4DB2E3523644B0800E85895 /* GMUNonHierarchicalDistanceBasedAlgorithm.m in Sources */,
+				C4E2526F236513FA00D97CE7 /* PlaceCell.swift in Sources */,
+				C4E25277236518F600D97CE7 /* Model.xcdatamodeld in Sources */,
 				C4DB2E3223644B0800E85895 /* GMUGridBasedClusterAlgorithm.m in Sources */,
 				C4DB2E2C23644B0800E85895 /* GMUWeightedLatLng.m in Sources */,
 				C4DB2E2123644B0800E85895 /* GMUGeometryCollection.m in Sources */,
@@ -502,17 +600,22 @@
 				C4DB2E2923644B0800E85895 /* GMUPair.m in Sources */,
 				C4DB2E1F23644B0800E85895 /* GMUKMLParser.m in Sources */,
 				AC64A3A1236480D400CBC178 /* PlaceManagerView.swift in Sources */,
+				C4EBDC042364B17E0082D71D /* MapVC.swift in Sources */,
 				C4DB2E3623644B0800E85895 /* GMUDefaultClusterRenderer.m in Sources */,
-				C4DB2DBE2364464300E85895 /* SceneDelegate.swift in Sources */,
 				C4DB2E2523644B0800E85895 /* GMUFeature.m in Sources */,
 				C4DB2E2E23644B0800E85895 /* GMUHeatmapTileLayer.m in Sources */,
 				C4DB2E3423644B0800E85895 /* GMUSimpleClusterAlgorithm.m in Sources */,
+				C4EBDC112364D12B0082D71D /* EmojiCell.swift in Sources */,
 				C4DB2E3323644B0800E85895 /* GMUWrappingDictionaryKey.m in Sources */,
 				C4EBDBF123647A390082D71D /* GImageManager.swift in Sources */,
 				C4DB2E3023644B0800E85895 /* GQTPointQuadTreeChild.m in Sources */,
 				C4DB2E2223644B0800E85895 /* GMUPlacemark.m in Sources */,
 				C4DB2DC02364464300E85895 /* ContentView.swift in Sources */,
+				C4EBDC082364BB8D0082D71D /* FilterLayout.swift in Sources */,
+				C4E2526A2364FDD400D97CE7 /* VisionModel.swift in Sources */,
 				C4DB2E2023644B0800E85895 /* GMUGeometryRenderer.m in Sources */,
+				C4EBDC0D2364CC200082D71D /* DetailVC.swift in Sources */,
+				C4E2526C2365095600D97CE7 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -649,9 +752,10 @@
 			baseConfigurationReference = 7EB8860A7AB7C7B8DAF66D0E /* Pods-ThePlace2019.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ThePlace2019/ThePlace2019.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ThePlace2019/Preview Content\"";
-				DEVELOPMENT_TEAM = 7PLLZ436SG;
+				DEVELOPMENT_TEAM = 8YBKQD6YZD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ThePlace2019/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -660,6 +764,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.lwts.ThePlace2019;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "ThePlace2019/Header-Bridge.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -671,9 +776,10 @@
 			baseConfigurationReference = EC027A34C9E5A122274D9F53 /* Pods-ThePlace2019.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ThePlace2019/ThePlace2019.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"ThePlace2019/Preview Content\"";
-				DEVELOPMENT_TEAM = 7PLLZ436SG;
+				DEVELOPMENT_TEAM = 8YBKQD6YZD;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = ThePlace2019/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -682,6 +788,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.lwts.ThePlace2019;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OBJC_BRIDGING_HEADER = "ThePlace2019/Header-Bridge.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -710,6 +817,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C4E25275236518F600D97CE7 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4E25276236518F600D97CE7 /* Model.xcdatamodel */,
+			);
+			currentVersion = C4E25276236518F600D97CE7 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C4DB2DB02364464300E85895 /* Project object */;
 }

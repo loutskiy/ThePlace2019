@@ -10,7 +10,6 @@ import SwiftUI
 
 struct GMapKitView: UIViewRepresentable {
     func updateUIView(_ uiView: MapController, context: UIViewRepresentableContext<GMapKitView>) {
-        
     }
     
     func makeUIView(context: Context) -> MapController {

@@ -23,4 +23,9 @@ class GImageManager {
         return str
     }
     
+    func makeMapImageLink() -> String {
+        let str = "https://maps.googleapis.com/maps/api/staticmap?center=\(latitude),\(longitude)&zoom=14&size=400x400&key=AIzaSyDqCWYrOQMfTTEEhOXpU_v5ozFS_di--24"
+        return str
+    }
+    
 }

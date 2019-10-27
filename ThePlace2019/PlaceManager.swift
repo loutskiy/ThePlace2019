@@ -28,7 +28,7 @@ class PlaceManager {
     var places = [Place]()
     
     init() {
-        filter.country = "RU"
+        filter.country = "HU"
         filter.type = GMSPlacesAutocompleteTypeFilter.address
     }
     
@@ -42,6 +42,7 @@ class PlaceManager {
                 for result in results {
                     let place = Place(placeId: result.placeID, address: result.attributedFullText.string)
                     self.places.append(place)
+                    print(result.types)
                 }
             }
             success(self.places)

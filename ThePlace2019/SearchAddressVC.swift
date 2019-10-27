@@ -16,8 +16,11 @@ class SearchAddressVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchBar.becomeFirstResponder()
+        navigationItem.title = "Search"
         searchBar.delegate = self
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        tableView.tableFooterView = UIView()
     }
 
     // MARK: - Table view data source
